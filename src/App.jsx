@@ -3,7 +3,6 @@ import React from 'react'
 import './App.css'
 import SearchBar from './components/SearchBar'
 import RecipeCard from './components/RecipeCard'
-import Pagination from './components/Pagination'
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 
@@ -11,7 +10,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
-  const [info, results] = recipes;
   
   // search for the recipe
   const searchRecipes = async () => {
@@ -36,7 +34,7 @@ function App() {
   return (
     <>
       <div className="container">
-      <h2>Our Tasty Recipes!</h2>
+      <h2>Our Food Recipes</h2>
       <SearchBar
         isLoading={isLoading}
         query={query}
@@ -52,11 +50,6 @@ function App() {
           />
         )) : "No Results."}
       </div>
-      <Pagination
-        info={info}
-        pageNumber={pageNumber}
-        updatePageNumber={updatePageNumber}
-      />
       </div>
     </>
   )
