@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import React from 'react'
-import './App.css'
+import "./styles/index.scss"
 import SearchBar from './components/SearchBar'
 import RecipeCard from './components/RecipeCard'
+import NavBar from './components/NavBar'
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 
@@ -33,9 +34,9 @@ function App() {
 
   return (
     <>
-      <div className="container">
-      <h2>Our Food Recipes</h2>
-      <SearchBar
+      <div>
+      <NavBar />
+      {/* <SearchBar
         isLoading={isLoading}
         query={query}
         setQuery={setQuery}
@@ -49,7 +50,7 @@ function App() {
              recipe={recipe}
           />
         )) : "No Results."}
-      </div>
+      </div> */}
       </div>
     </>
   )
