@@ -1,6 +1,9 @@
 .section.hero{
     .typography{
       padding-right: 1em;
+      .info{
+        text-align: left;
+      }
     }
     .gallery{
       display: grid;
