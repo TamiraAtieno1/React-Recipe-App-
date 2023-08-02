@@ -3,6 +3,7 @@ import React from 'react'
 import "./styles/index.scss"
 import NavBar from './components/NavBar'
 import IntroSection from './components/IntroSection'
+import ImproveSkills from './components/ImproveSkills'
 import SearchBar from './components/SearchBar'
 import RecipeCard from './components/RecipeCard'
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
@@ -39,6 +40,7 @@ function App() {
       <NavBar />
       <div className='container main'>
           <IntroSection />
+          <ImproveSkills />
       </div>
       {/* <SearchBar
         isLoading={isLoading}
