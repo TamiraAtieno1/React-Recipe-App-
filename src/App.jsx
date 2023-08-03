@@ -6,6 +6,7 @@ import IntroSection from './components/IntroSection'
 import ImproveSkills from './components/ImproveSkills'
 import QuoteSection from './components/QuoteSection'
 import ChefSection from './components/ChefSection'
+import Footer from './components/Footer'
 import SearchBar from './components/SearchBar'
 import RecipeCard from './components/RecipeCard'
 const searchApi = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
@@ -46,6 +47,7 @@ function App() {
           <QuoteSection />
           <ChefSection/>
       </div>
+      <Footer />
       {/* <SearchBar
         isLoading={isLoading}
         query={query}

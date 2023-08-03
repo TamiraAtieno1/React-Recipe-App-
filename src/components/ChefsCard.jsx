@@ -5,11 +5,11 @@ import { faFacebook, faTwitter, faInstagram } from "@fortawesome/free-brands-svg
 const ChefsCard=({chef})=>{
     return(
         <div className="chef-card">
-            <img src="/images/top-chefs/img_1.jpg" alt="" />
+            <img src={chef.img} alt="" />
             <div className="chef-card-info">
-                <h3 className="chef-card-name">Juan Carlos</h3>
-                <p className="chef-recipe-count">Recipes: <b>10</b></p>
-                <p className="chef-cuisine">Cuisine: <b>Mexican</b></p>
+                <h3 className="chef-card-name">{chef.name}</h3>
+                <p className="chef-recipe-count">Recipes: <b>{chef.recipesCount}</b></p>
+                <p className="chef-cuisine">Cuisine: <b>{chef.cuisine}</b></p>
                 <p className="chef-icons">
                     <FontAwesomeIcon icon={faFacebook}/> 
                     <FontAwesomeIcon icon={faTwitter}/> 
