@@ -97,49 +97,54 @@
   @import "partials/quote-section";
   @import "partials/chefs-section";
   @import "partials/footer";
+  @import "partials/previous-searches";
+  @import "partials/recipes";
 
-  .previous-searches{
-    display: block;
-    h2{
-      color: var(--text-color);
-      margin-bottom: .5em;
-    }
-    .previous-searches-container{
-      .search-item{
-        background-color: var(--primary-color);
-        display: inline-block;
-        padding: .5em 1em;
-        margin: 0 1em 1em 0;
-        color: #fff;
+  .content{
+    .col.img{
+      img{
+        left: 0;
         border-radius: 30px;
-        box-shadow: 0 3px 6px var(--shadow-color);
-        transform: translateX(100%);
-        opacity: 0;
-        animation: getAnimationDuration(.5s) slideInRight forwards;
-      }
-    }
-    .search-box{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      input, .btn{
-        height: 40px;
-      }
-      input{
-        min-width: 500px;
-        padding: 0 .5em;
-        border-radius: 6px 0 0 6px;
-        outline: none;
-        border: 1px solid #eae4e4;
-      }
-      .btn{
-        padding-block: 0;
-        padding-inline: 2em;
-        border-radius: 0 6px 6px 0;
+        width: 100%;
+        height: 400px;
+        align-items: flex-start;
       }
     }
   }
+  .content .inner-content{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255,255,255,0.8);
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 5px 5px var(--shadow-color);
+    .headings{
+      margin-bottom:.1em;
+    }
+  }
+  .recipe-details{
+      width: 70%;
+      margin: 2rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .ingredients,.instructions{
+    flex-basis: 50%;
+    text-align: justify;
+  }
+  .ingredients h4{
+    margin-top: 1.5rem;
+    font-weight: bold;
+  }
+
+  
+  
 
   .main{
     padding-block: 3vw;
@@ -164,74 +169,70 @@
     }
  }
   
-  h1, h2, h3, p {
-    text-align: center;
-  }
+  // h1, h2, h3, p {
+  //   text-align: center;
+  // }
   
   
   
-  form {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
+  // form {
+  //   display: flex;
+  //   width: 100%;
+  //   justify-content: center;
+  // }
   
-  input {
-    border: 1px solid #f7f7f7;
-    padding: 10px;
-    font-size: 16px;
+  // input {
+  //   border: 1px solid #f7f7f7;
+  //   padding: 10px;
+  //   font-size: 16px;
   
-  }
-  input:focus {
-    outline: none;
-  }
+  // }
+  // input:focus {
+  //   outline: none;
+  // }
   
-  .form-control {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 400px;
-  }
+  // .form-control {
+  //   border-top-left-radius: 10px;
+  //   border-bottom-left-radius: 10px;
+  //   width: 400px;
+  // }
   
-  .btn {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    cursor: pointer;
+  // .btn {
+  //   border-bottom-right-radius: 10px;
+  //   border-top-right-radius: 10px;
+  //   cursor: pointer;
   
-  }
+  // }
   
-  .recipes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-  }
+  // .recipes {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   margin-top: 20px;
+  // }
   
-  .card {
-    width: 200px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-  }
+  // .card {
+  //   width: 200px;
+  //   background-color: white;
+  //   margin: 10px;
+  //   border-radius: 5px;
+  //   padding-bottom: 10px;
+  // }
   
-  .card-image {
-    width: 100%;
-  }
   
-  .card-body {
-    padding: 10px;
-    text-align: center;
-  }
+  // .card-body {
+  //   padding: 10px;
+  //   text-align: center;
+  // }
   
-  .category {
-    color: #a1a1a1;
-  }
+  // .category {
+  //   color: #a1a1a1;
+  // }
   
-  .instrucions{
-    background-color: #FFBA5A;
-    color: inherit;
-    padding: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-  }
+  // .instrucions{
+  //   background-color: #FFBA5A;
+  //   color: inherit;
+  //   padding: 10px;
+  //   border-radius: 10px;
+  //   text-decoration: no

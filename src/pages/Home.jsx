@@ -4,6 +4,7 @@ import ImproveSkills from '../components/ImproveSkills'
 import QuoteSection from '../components/QuoteSection'
 import ChefSection from '../components/ChefSection'
 
+
 const Home = () =>{
     return(
         <div>
