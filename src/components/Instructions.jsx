@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+let vId="";
 
 const Instructions= () =>{
     const [item, setItem]= useState();
@@ -13,6 +14,11 @@ const Instructions= () =>{
             setItem(data.meals[0]);
         })
     }
+    if(item){
+        const url= item.strYoutube;
+        const str=url.split("=");
+        vId=str[str.length-1];
+      }
     return(
         <>
             {
@@ -43,6 +49,10 @@ const Instructions= () =>{
                             <h2>Instructions</h2><br />
                             <h4>{item.strInstructions}</h4>
                         </div>
+                    </div>
+                    <div className="video">
+                         <iframe width="100%" height="515" src={`https://www.youtube.com/embed/${vId}`}>
+                         </iframe>
                     </div>
                 </>)
             }
