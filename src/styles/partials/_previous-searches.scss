@@ -4,9 +4,11 @@
       text-align: left;
       color: var(--text-color);
       margin-bottom: .5em;
+      z-index: 999;
     }
     .previous-searches-container{
       .search-item{
+        z-index: 999;
         background-color: var(--primary-color);
         display: inline-block;
         padding: .5em 1em;
