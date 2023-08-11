@@ -31,7 +31,7 @@ const NavBar=()=>{
     return (
      <>
             <div className="navbar container">
-                <a href="#!" className="logo">TheF<span>oo</span>dies<span>hub</span></a>
+                <Link to="/" className="logo">TheF<span>oo</span>dies<span>hub</span></Link>
                 <div className="nav-links">
                     { links.map(link => (
                         <Link className={location.pathname === link.path ? "sidebar-link active" : "sidebar-link"} to={link.path} key={link.name}>{link.name}</Link>
