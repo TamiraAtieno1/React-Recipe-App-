@@ -16,11 +16,9 @@ const Instructions= () =>{
     //         setItem(data.meals[0]);
     //     })
     // }
-    // if(item){
-    //     const url= item.strYoutube;
-    //     const str=url.split("=");
-    //     vId=str[str.length-1];
-    //   }
+    const url= recipe.strYoutube;
+    const str=url.split("=");
+    vId=str[str.length-1];
     return(
         <>
                     <div className=" content">
