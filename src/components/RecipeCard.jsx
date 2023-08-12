@@ -21,7 +21,7 @@ const RecipeCard= ({recipe}) => {
              />
             <div className="recipe-card-info">
                 <p className="recipe-title">{strMeal}</p>
-                <Link to={`/${recipe.idMeal}`} className="view-btn" key={recipe.idMeal}>VIEW RECIPE</Link>
+                <Link to={`/${recipe.idMeal}`} state={recipe} className="view-btn" key={recipe.idMeal}>VIEW RECIPE</Link>
             </div>
         </div>
     )
