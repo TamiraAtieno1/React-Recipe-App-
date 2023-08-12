@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 const RecipeCard= ({recipe}) => {
     const {
@@ -20,7 +21,7 @@ const RecipeCard= ({recipe}) => {
              />
             <div className="recipe-card-info">
                 <p className="recipe-title">{strMeal}</p>
-                <p className="view-btn" key={recipe.idMeal} onClick={()=>{navigate(`/${recipe.idMeal}`)}}>VIEW RECIPE</p>
+                <Link to={`/${recipe.idMeal}`} className="view-btn" key={recipe.idMeal}>VIEW RECIPE</Link>
             </div>
         </div>
     )
