@@ -11,7 +11,7 @@ const Footer = () =>{
             <div className="footer-section">
                 <p className="title">Contact Us</p>
                 <p>TheFoodiesHub@gmail.com</p>
-                <p>+254 718 000 148</p>
+                <p>+254 711 895 052</p>
                 <p>Nairobi, Kenya</p>
             </div>
             <div className="footer-section">
