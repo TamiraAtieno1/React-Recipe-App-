@@ -7,7 +7,7 @@ const Instructions= () =>{
     const [item, setItem]= useState();
     const{MealId}=useParams();
     const recipe = useLocation().state
-    console.log(recipe)
+    console.log(recipe.strInstructions)
     // if(MealId!="")
     // {
     //     fetch(`https:/www.themealdb.com/api/json/v1/1/lookup.php?i=${MealId}`)
@@ -34,14 +34,14 @@ const Instructions= () =>{
                     <div className="recipe-details">
                         <div className="ingredients">
                              <h2>Ingredients</h2><br />
-                             <h4>{recipe.strIngredient1} :{recipe.strMeasure1}</h4>
-                             <h4>{recipe.strIngredient2} :{recipe.strMeasure2}</h4>
-                             <h4>{recipe.strIngredient3} :{recipe.strMeasure3}</h4>
-                             <h4>{recipe.strIngredient4} :{recipe.strMeasure4}</h4>
-                             <h4>{recipe.strIngredient5} :{recipe.strMeasure5}</h4>
-                             <h4>{recipe.strIngredient6} :{recipe.strMeasure6}</h4>
-                             <h4>{recipe.strIngredient7} :{recipe.strMeasure7}</h4>
-                             <h4>{recipe.strIngredient8} :{recipe.strMeasure8}</h4>
+                             <h4>{recipe.strIngredient1} : <span>{recipe.strMeasure1}</span></h4>
+                             <h4>{recipe.strIngredient2} : <span>{recipe.strMeasure2}</span></h4>
+                             <h4>{recipe.strIngredient3} : <span>{recipe.strMeasure3}</span></h4>
+                             <h4>{recipe.strIngredient4} : <span>{recipe.strMeasure4}</span></h4>
+                             <h4>{recipe.strIngredient5} : <span>{recipe.strMeasure5}</span></h4>
+                             <h4>{recipe.strIngredient6} : <span>{recipe.strMeasure6}</span></h4>
+                             <h4>{recipe.strIngredient7} : <span>{recipe.strMeasure7}</span></h4>
+                             <h4>{recipe.strIngredient8} : <span>{recipe.strMeasure8}</span></h4>
                         </div>
                         <div className="instructions">
                             <h2>Instructions</h2><br />

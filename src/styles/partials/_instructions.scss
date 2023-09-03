@@ -25,21 +25,30 @@
       margin-bottom:.1em;
     }
   }
-  .recipe-details{
-      width: 70%;
-      margin: 2rem auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.recipe-details {
+  margin: 50px 0 50px 0;
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+
+  .ingredients {
+    width: 50%;
+
+    h4 {
+      span {
+        margin:20px ;
+      }
+    }
   }
-  .ingredients,.instructions{
-    flex-basis: 50%;
-    text-align: justify;
+
+  .instructions {
+    width: 50%;
+    overflow-y: scroll;
   }
-  .ingredients h4{
-    margin-top: 1.5rem;
-    font-weight: bold;
-  }
+
+
+}
   .video{
     width: 100%;
     margin: 3em auto;
