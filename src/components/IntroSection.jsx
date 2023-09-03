@@ -18,7 +18,7 @@ const IntroSection=()=>{
         <div className="section hero">
             <div className="col typography">
                 <h1 className="title">What Are We About</h1>
-                <p className="info">TheRecipe is a place where you can satisfy your soul and tummy with delicious food recipes of all cuisine. So start exploring now for free recipes! </p>
+                <p className="info">TheRecipeHub is a place where you can satisfy your soul and tummy with delicious food recipes of all cuisine. So start exploring now for free recipes! </p>
                 <Link to={'/recipes'}><button className="btn">explore now </button></Link>
             </div>
             <div className="col gallery">
